@@ -1,8 +1,109 @@
 body {
     margin: 0;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+    background-color: #1B244A;
+    margin: 50px auto;
+    min-height: 300px;
+    max-height: fit-content;
+    align-items: center;
+    max-width: 380px;
+
+}
+#reset-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3, #home-display, #guest-display{
+    text-align: center;
+}
+
+.btns {
+    margin-top: 23px;
+    background-color: transparent;
+    border: solid 2px #9AABD8;
+    color: #9AABD8;
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+    transition: all 0.3s ease 0s;
+}
+
+#score-btns1, #score-btns2{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Staatliches', cursive;
+}
+.btns:hover{
+    border: solid 2px #5d6785;
+    color: #5d6785;
+}
+.btns:active{
+    border: solid 2px #5d678567;
+    color: #5d6785;
+}
+
+#home-display, #guest-display{
+    font-size: 50px;
+    background-color: black;
+    border-radius: 3px;
+    min-width: 120px;
+    min-height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: 0px auto;
+    color: #F94F6D;
+}
+
+h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #EEEEEE;
+}
+
+#reset-btn{
+    font-family: 'Staatliches', cursive;
+    background-color: #1B244A;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 5px #F94F6D;
+    transition: all 0.3s ease 0s;
+    border: none;
+}
+
+#reset-btn:hover{
+    opacity: 0.75;
+    text-shadow: 0px 0px 5px #f94f6e7a;
+}
+
+#reset-btn:active{
+    background-color: #141a35;
+}
+
+#reset-btn:disabled{
+    background-color: rgb(173, 173, 173);
+    text-shadow: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+#error-msg {
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    color: #F94F6D;
 }
